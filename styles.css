@@ -1,0 +1,162 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+		/* set up sizing for using REM*/
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background: #DC8A8A;
+    font-size: 1.6rem;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    padding: 10rem 0 0 20rem;
+    line-height: 150%;
+}
+
+body,
+a {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    margin: 0 0 6rem 10rem;
+}
+
+nav {
+    margin-bottom: 3.2rem;
+}
+
+.menu__options {
+    display: flex;
+}
+
+.menu__options li {
+    margin-right: 6rem;
+}
+
+.menu__options a {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: .5;
+    transition: ease-in-out .3s;
+    -webkit-transition: ease-in-out .3s;
+    -moz-transition: ease-in-out .3s;
+    -ms-transition: ease-in-out .3s;
+    -o-transition: ease-in-out .3s;
+}
+
+a.menu__options-item:hover{
+    opacity: .8;
+}
+
+.menu__options a.active {
+    opacity: 1;
+}
+
+.menu__intructions {
+    width: 55rem;
+}
+
+.settings,
+.settings__tile-group,
+.settings__control {
+    display: flex;
+}
+
+.settings__tile-group {
+    background-color: rgb(190, 107, 107);
+    width: 90rem;
+    height: 30rem;
+}
+
+.settings__control {
+    background: #fff;
+    width: 10rem;
+    height: 10rem;
+    opacity: .5;
+    transition: ease-in-out .3s;
+    -webkit-transition: ease-in-out .3s;
+    -moz-transition: ease-in-out .3s;
+    -ms-transition: ease-in-out .3s;
+    -o-transition: ease-in-out .3s;
+    justify-content: center;
+}
+
+.settings__control:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.settings__tile {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6rem;
+}
+
+.timer {
+    background: #3E3C3D;
+    position: relative;
+}
+
+.temperature {
+    background: #353334;
+}
+
+.load {
+    background: #201E1F;
+}
+
+.settings__title {
+    color: #CB8B85;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.settings__selection {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.start-btn {
+    background: #131313;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    padding: 1.2rem 9.6rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    bottom: 0;
+    margin-bottom: -2.4rem;
+    right: 10%;
+    transition: ease-in-out .3s;
+    -webkit-transition: ease-in-out .3s;
+    -moz-transition: ease-in-out .3s;
+    -ms-transition: ease-in-out .3s;
+    -o-transition: ease-in-out .3s;
+}
+
+.start-btn:hover {
+    background: rgb(64, 163, 113);
+    margin-bottom: -2rem;
+}
